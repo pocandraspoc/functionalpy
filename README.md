@@ -12,4 +12,17 @@ As a home project I just Use my default ubuntu 16.04 what is obviously not that 
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+I am using sublime text with anaconda
+In sublime i use the conda environment for building
+Take a look at lines in my 
+```
+~/$USER/.config/sublime-text-3/Packages/User/funpy.sublime-build
+```
+
+```
+{
+    "cmd": ["/home/$USER/.conda/envs/funpy/bin/python3", "-u", "$file"],
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "selector": "source.python"
+}
+```

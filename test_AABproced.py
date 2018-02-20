@@ -3,7 +3,7 @@ import AABproced
 
 class Testproc(unittest.TestCase):
 
-	def proc(self):
+	def test_proc(self):
 		result = AABproced.proc(1,10)
 		self.assertEqual(result, 23)
 		result_02 = AABproced.proc(1,20)
