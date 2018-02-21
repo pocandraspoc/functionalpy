@@ -41,13 +41,44 @@ print(res3)
 If we would like to get the highest element on [1] position
 and the whole tuple of that element
 '''
-GetTuple = max(map(lambda yc: (yc[1], yc), year_cheese))
-print(GetTuple)
+GetMaxTuple = max(map(lambda yc: (yc[1], yc), year_cheese))
+print(GetMaxTuple)
 '''
 OR
 '''
 def key1__01(self):
 	return self[1], self 
 
-GetTupleWithFunction = max(map(key1__01, year_cheese))
-print(GetTupleWithFunction)
+GetMaxTupleWithFunction = max(map(key1__01, year_cheese))
+print(GetMaxTupleWithFunction)
+
+'''
+Ofc we can say
+'''
+GetSecondElementOfMaxTuple = max(map(key1__01, year_cheese))[1]
+print(GetSecondElementOfMaxTuple)
+
+'''
+However
+max(map(key1__01, year_cheese)) is an object NOT a function in my view point
+so i would do
+'''
+print(GetMaxTupleWithFunction[1])
+
+'''
+More times
+'''
+
+
+'''
+Or even something like
+'''
+
+GetSecondElementOfMaxTuple_version_2 = GetMaxTupleWithFunction[1]
+print(GetSecondElementOfMaxTuple_version_2)
+
+'''
+The nameing is not conventional i know, but
+giving an other name for an other object is much 
+"cleaner" (from clean code) for me...
+'''
