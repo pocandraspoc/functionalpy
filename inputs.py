@@ -17,5 +17,5 @@ def valueDicOrString(testThisValue):
 		return None
 
 print(valueInt(100))
-
 print(valueDicOrString("hello"))
+print(dict(["he"]))
