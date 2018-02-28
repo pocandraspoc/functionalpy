@@ -16,6 +16,16 @@ def valueDicOrString(testThisValue):
 	else:
 		return None
 
-print(valueInt(100))
+def test_Int(self):
+    self.assertTrue(type(self) is int)
+    self.assertIs(type(self), int)
+    self.assertIsInstance(self, int)
 
+inp = 11
+print(test_Int(inp))
+print(valueInt(100))
 print(valueDicOrString("hello"))
+print(dict(["he"]))
+
+print(None == None)
+print(type(type(None)))
